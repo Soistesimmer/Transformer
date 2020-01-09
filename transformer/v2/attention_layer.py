@@ -29,7 +29,7 @@ class Attention(tf.keras.layers.Layer):
         """Initialize Attention.
 
         Args:
-          hidden_size: int, output dim of hidden layer.
+          hidden_size: int, output dim of hidden layer. 这里的hidden_size是所有头加起来的大小
           num_heads: int, number of heads to repeat the same attention structure.
           attention_dropout: float, dropout rate inside attention for training.
         """
