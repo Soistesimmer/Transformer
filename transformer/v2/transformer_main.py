@@ -230,6 +230,7 @@ class TransformerTask(object):
                 train_loss_metric = tf.keras.metrics.Mean(
                     "training_loss", dtype=tf.float32)
             else:
+                # 模型训练的配置，包括优化器、LOSS等
                 model.compile(opt)
 
         # model结构
